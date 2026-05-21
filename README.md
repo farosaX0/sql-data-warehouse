@@ -73,8 +73,12 @@ sql-data-warehouse/
 ├── datasets/               # Source CSV files (CRM & ERP)
 │   ├── source_crm/
 │   └── source_erp/
-├── docs/                   # Architecture diagrams
-│   └── Architecture.drawio
+├── docs/
+│   └── data_architecture.png
+│   └── data_catalog.md
+│   └── data_integration.png
+│   └── naming_conventions.md
+|
 ├── scripts/
 │   ├── bronze/
 │   │   ├── ddl_bronze.sql          # Table definitions
