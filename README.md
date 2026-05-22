@@ -67,32 +67,29 @@ fact_sales ────┤
 ---
 
 ## Repository Structure
-
 ```
 sql-data-warehouse/
-├── datasets/               # Source CSV files (CRM & ERP)
+├── datasets/                        # Source CSV files (CRM & ERP)
 │   ├── source_crm/
 │   └── source_erp/
 ├── docs/
-│   └── data_architecture.png
-│   └── data_catalog.md
-│   └── data_integration.png
-│   └── naming_conventions.md
-|
+│   ├── data_architecture.png        # High-level architecture diagram
+│   ├── data_catalog.md              # Dataset field descriptions & metadata
+│   ├── data_integration.png         # Data integration model diagram
+│   └── naming_conventions.md        # Naming guidelines for tables & columns
 ├── scripts/
 │   ├── bronze/
-│   │   ├── ddl_bronze.sql          # Table definitions
-│   │   └── proc_load_bronze.sql    # ETL stored procedure
+│   │   ├── ddl_bronze.sql           # Table definitions
+│   │   └── proc_load_bronze.sql     # ETL stored procedure
 │   ├── silver/
-│   │   ├── ddl_silver.sql          # Table definitions
-│   │   └── proc_load_silver.sql    # ETL stored procedure
+│   │   ├── ddl_silver.sql           # Table definitions
+│   │   └── proc_load_silver.sql     # ETL stored procedure
 │   └── gold/
-│       └── ddl_gold.sql            # View definitions (Star Schema)
-└── tests/                  # Data quality checks
-    ├── quality_checks_silver.sql
-    ├── quality_checks_gold.sql
+│       └── ddl_gold.sql             # View definitions (Star Schema)
+└── tests/
+    ├── quality_checks_silver.sql     # Data quality validation — Silver layer
+    └── quality_checks_gold.sql       # Data quality validation — Gold layer
 ```
-
 ---
 
 ## Tech Stack
