@@ -89,8 +89,8 @@ sql-data-warehouse/
 │   └── gold/
 │       └── ddl_gold.sql            # View definitions (Star Schema)
 └── tests/                  # Data quality checks
-│   ├── quality_checks_silver.sql
-│   ├── quality_checks_gold.sql
+    ├── quality_checks_silver.sql
+    ├── quality_checks_gold.sql
 ```
 
 ---
